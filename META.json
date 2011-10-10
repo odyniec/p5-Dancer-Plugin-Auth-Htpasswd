@@ -1,0 +1,52 @@
+{
+   "abstract" : "Basic HTTP authentication with htpasswd files in Dancer apps",
+   "author" : [
+      "Michal Wojciechowski <odyniec@cpan.org>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dancer-Plugin-Auth-Htpasswd",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Pod::Readme" : 0,
+            "Pod::Select" : 0,
+            "Test::More" : 0
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.38"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Authen::Htpasswd" : 0,
+            "Dancer" : "1.307"
+         }
+      }
+   },
+   "provides" : {
+      "Dancer::Plugin::Auth::Htpasswd" : {
+         "file" : "lib/Dancer/Plugin/Auth/Htpasswd.pm",
+         "version" : "0.01"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ],
+      "repository" : {
+         "url" : "https://github.com/odyniec/Dancer-Plugin-Auth-Htpasswd"
+      }
+   },
+   "version" : "0.01"
+}
