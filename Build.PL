@@ -31,6 +31,10 @@ my $builder = $class->new(
         'Authen::Htpasswd' => 0,
         'Dancer' => 1.3070,
     },
+    configure_requires => {
+        'Pod::Readme' => 0,
+        'Pod::Select' => 0,
+    },
     build_requires => {
         'Pod::Readme' => 0,
         'Pod::Select' => 0,

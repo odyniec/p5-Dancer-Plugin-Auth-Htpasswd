@@ -1,5 +1,7 @@
 Revision history for Dancer-Plugin-Auth-Htpasswd
 
+0.011   2011-11-13
+        Added missing requirements to build script.
+
 0.01    2011-10-10
         First version, released on an unsuspecting world.
-

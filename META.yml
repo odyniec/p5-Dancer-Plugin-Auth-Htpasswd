@@ -8,6 +8,7 @@ build_requires:
   Test::More: 0
 configure_requires:
   Module::Build: 0.38
+  Pod::Readme: 0
 dynamic_config: 1
 generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112150'
 license: perl
@@ -18,11 +19,11 @@ name: Dancer-Plugin-Auth-Htpasswd
 provides:
   Dancer::Plugin::Auth::Htpasswd:
     file: lib/Dancer/Plugin/Auth/Htpasswd.pm
-    version: 0.01
+    version: 0.011
 requires:
   Authen::Htpasswd: 0
   Dancer: 1.307
 resources:
   license: http://dev.perl.org/licenses/
   repository: https://github.com/odyniec/Dancer-Plugin-Auth-Htpasswd
-version: 0.01
+version: 0.011
