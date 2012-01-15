@@ -6,7 +6,7 @@ Dancer::Plugin::Auth::Htpasswd - Basic HTTP authentication with htpasswd files i
 
 =head1 VERSION
 
-Version 0.01
+Version 0.011
 
 =head1 SYNOPSIS
 

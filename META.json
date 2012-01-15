@@ -24,7 +24,8 @@
       "configure" : {
          "requires" : {
             "Module::Build" : "0.38",
-            "Pod::Readme" : 0
+            "Pod::Readme" : 0,
+            "Pod::Select" : 0
          }
       },
       "runtime" : {

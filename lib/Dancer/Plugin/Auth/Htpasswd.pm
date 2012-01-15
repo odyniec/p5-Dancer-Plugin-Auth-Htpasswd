@@ -15,7 +15,7 @@ use Dancer::Plugin;
 use Dancer::Response;
 use MIME::Base64;
 
-our $VERSION = '0.011';
+our $VERSION = '0.012';
 
 my $settings = plugin_setting;
 
@@ -105,7 +105,7 @@ __END__
 
 =head1 VERSION
 
-Version 0.011
+Version 0.012
 
 =head1 SYNOPSIS
 

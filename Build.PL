@@ -13,7 +13,8 @@ my $class = Module::Build->subclass(
             
             podselect({ -output => 'README.pod' },
                 'lib/Dancer/Plugin/Auth/Htpasswd.pm');
-            
+
+            chmod 0644, 'README';
             my $parser = Pod::Readme->new();
             $parser->parse_from_file('README.pod', 'README');
             
