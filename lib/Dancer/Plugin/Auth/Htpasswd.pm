@@ -41,7 +41,7 @@ sub _auth_htpasswd {
     
     if (-r $passwd_file) {
         # Get authentication data from request
-        my $auth = request->env->{HTTP_AUTHORIZATION};
+        my $auth = request->header('Authorization');
         
         if (defined $auth && $auth =~ /^Basic (.*)$/) {
             my ($user, $password) = split(/:/, (MIME::Base64::decode($1) ||

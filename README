@@ -3,7 +3,7 @@ NAME
     files in Dancer apps
 
 VERSION
-    Version 0.011
+    Version 0.012
 
 SYNOPSIS
     Dancer::Plugin::Auth::Htpasswd allows you to use Apache-style htpasswd

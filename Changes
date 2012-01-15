@@ -1,7 +1,9 @@
 Revision history for Dancer-Plugin-Auth-Htpasswd
 
 0.012   2012-01-15
-        * Fixed the problem with README file generation during build process 
+        * Fixed the problem with README file generation during build process
+        * Authorization information is now read from a request header, not an
+          environment variable
 
 0.011   2011-11-13
         Added missing requirements to build script.
