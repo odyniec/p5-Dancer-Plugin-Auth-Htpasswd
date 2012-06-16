@@ -7,10 +7,11 @@ build_requires:
   Pod::Select: 0
   Test::More: 0
 configure_requires:
-  Module::Build: 0.36
+  Module::Build: 0.4
   Pod::Readme: 0
   Pod::Select: 0
-generated_by: 'Module::Build version 0.3601'
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4, CPAN::Meta::Converter version 2.113640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -19,11 +20,11 @@ name: Dancer-Plugin-Auth-Htpasswd
 provides:
   Dancer::Plugin::Auth::Htpasswd:
     file: lib/Dancer/Plugin/Auth/Htpasswd.pm
-    version: 0.012
+    version: 0.013
 requires:
   Authen::Htpasswd: 0
   Dancer: 1.307
 resources:
   license: http://dev.perl.org/licenses/
   repository: https://github.com/odyniec/Dancer-Plugin-Auth-Htpasswd
-version: 0.012
+version: 0.013
