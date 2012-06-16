@@ -77,7 +77,7 @@ sub _auth_htpasswd {
     ));
 }
 
-hook before => sub {
+my $check_auth = sub {
     # Check if the request matches one of the protected paths (reverse sort the
     # paths to find the longest matching path first)
     foreach my $path (reverse sort keys %$paths) {
@@ -94,6 +94,9 @@ hook before => sub {
         }
     }
 };
+
+hook before => $check_auth;
+hook before_file_render => $check_auth;
 
 register auth_htpasswd => \&_auth_htpasswd;
 
