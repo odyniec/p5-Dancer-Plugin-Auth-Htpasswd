@@ -20,11 +20,11 @@ name: Dancer-Plugin-Auth-Htpasswd
 provides:
   Dancer::Plugin::Auth::Htpasswd:
     file: lib/Dancer/Plugin/Auth/Htpasswd.pm
-    version: 0.013
+    version: 0.014
 requires:
   Authen::Htpasswd: 0
   Dancer: 1.307
 resources:
   license: http://dev.perl.org/licenses/
   repository: https://github.com/odyniec/Dancer-Plugin-Auth-Htpasswd
-version: 0.013
+version: 0.014
