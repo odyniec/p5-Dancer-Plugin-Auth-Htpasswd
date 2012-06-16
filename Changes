@@ -1,7 +1,8 @@
 Revision history for Dancer-Plugin-Auth-Htpasswd
 
 0.013   2012-06-16
-        The REMOTE_USER request variable is now set upon authorization.
+        * The REMOTE_USER request variable is now set upon authorization
+        * Static files are now properly protected
 
 0.012   2012-01-15
         * Fixed the problem with README file generation during build process
