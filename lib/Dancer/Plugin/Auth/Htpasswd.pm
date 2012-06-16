@@ -15,7 +15,7 @@ use Dancer::Plugin;
 use Dancer::Response;
 use MIME::Base64;
 
-our $VERSION = '0.012';
+our $VERSION = '0.013';
 
 my $settings = plugin_setting;
 
@@ -53,6 +53,7 @@ sub _auth_htpasswd {
                 $htpasswd->check_user_password($user, $password))
             {
                 # Authorization succeeded
+                request->env->{REMOTE_USER} = $user;                
                 return 1;
             }
         }
@@ -105,7 +106,7 @@ __END__
 
 =head1 VERSION
 
-Version 0.012
+Version 0.013
 
 =head1 SYNOPSIS
 
