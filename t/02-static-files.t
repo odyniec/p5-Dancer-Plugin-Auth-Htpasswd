@@ -6,8 +6,6 @@ use File::Spec;
 use MIME::Base64;
 use Test::More;
 
-my $remote_user;
-
 {
     package DancerApp;
     use Dancer;
