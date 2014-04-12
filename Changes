@@ -1,5 +1,7 @@
 Revision history for Dancer-Plugin-Auth-Htpasswd
 
+{{$NEXT}}
+
 0.014   2012-06-16
         Fixed version number in README files.
 

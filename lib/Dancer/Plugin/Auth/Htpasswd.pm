@@ -1,21 +1,17 @@
 package Dancer::Plugin::Auth::Htpasswd;
 
-=head1 NAME
-
-Dancer::Plugin::Auth::Htpasswd - Basic HTTP authentication with htpasswd files in Dancer apps
-
-=cut
-
-use warnings;
 use strict;
+use warnings;
+
+# ABSTRACT: Basic HTTP authentication with htpasswd files in Dancer apps
+
+# VERSION
 
 use Authen::Htpasswd;
 use Dancer ':syntax';
 use Dancer::Plugin;
 use Dancer::Response;
 use MIME::Base64;
-
-our $VERSION = '0.014';
 
 my $settings = plugin_setting;
 
@@ -104,12 +100,6 @@ register_plugin;
 
 1; # End of Dancer::Plugin::Auth::Htpasswd
 __END__
-
-=pod
-
-=head1 VERSION
-
-Version 0.014
 
 =head1 SYNOPSIS
 
@@ -229,64 +219,14 @@ C<"Restricted area">
 
 =back
 
-=head1 AUTHOR
+=head1 SEE ALSO
 
-Michal Wojciechowski, C<< <odyniec at cpan.org> >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to C<bug-dancer-plugin-auth-htpasswd at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Dancer-Plugin-Auth-Htpasswd>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
-
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc Dancer::Plugin::Auth::Htpasswd
-
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Dancer-Plugin-Auth-Htpasswd>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Dancer-Plugin-Auth-Htpasswd>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Dancer-Plugin-Auth-Htpasswd>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Dancer-Plugin-Auth-Htpasswd/>
-
-=back
-
+=for :list
+* L<Authen::Htpasswd>
 
 =head1 ACKNOWLEDGEMENTS
 
 The plugin uses the L<Authen::Htpasswd> module, written by David Kamholz
 and Yuval Kogman.
-
-
-=head1 LICENSE AND COPYRIGHT
-
-Copyright 2011 Michal Wojciechowski.
-
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
-
-See http://dev.perl.org/licenses/ for more information.
-
 
 =cut
